@@ -8,6 +8,8 @@ in pkgs.mkShell {
     pkgs.luanti
     pkgs.bashInteractive
     pkgs.lua
+    # TODO: Create flake for this repo
+    # TODO: Add Rust and rust packages
     (pkgs.vscode-with-extensions.override {
       vscode = pkgs.vscodium;
       vscodeExtensions = with pkgs.vscode-extensions; [
