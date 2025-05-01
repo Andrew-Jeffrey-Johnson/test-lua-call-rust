@@ -9,7 +9,9 @@ in pkgs.mkShell {
     pkgs.bashInteractive
     pkgs.lua
     # TODO: Create flake for this repo
+    # https://www.tweag.io/blog/2022-09-22-rust-nix/
     # TODO: Add Rust and rust packages
+    # https://kdheepak.com/blog/loading-a-rust-library-as-a-lua-module-in-neovim/
     (pkgs.vscode-with-extensions.override {
       vscode = pkgs.vscodium;
       vscodeExtensions = with pkgs.vscode-extensions; [
